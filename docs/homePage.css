@@ -1,0 +1,99 @@
+    
+    body {
+        background-color:rgb(27, 25, 41);
+        font-family: 'Brush Script MT', cursive;
+
+    }
+    h1 {
+        color: darkslateblue;
+        font-size: 500%;
+        font-stretch: 10px;
+        text-align: center;
+        padding: 20px;
+    
+    }
+
+    #main_content{
+        align-items: center;
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+
+    }
+
+    #websiteHeader {
+        float: center;
+        max-width: 40%;
+        max-height: .2%;
+        margin-top:5%;
+        
+    }
+
+    #pageButtons {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+
+    .screen_button {
+        clear: both;
+    /* font-family: 'Brush Script MT', cursive; */
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        color: beige;
+        background: transparent;
+        font-size: 350%;
+        border:transparent;
+        transition: transform 0.2s ease;
+        transform: scale(1);
+        padding: 1% 5%;
+    } 
+
+    .screen_button:hover {
+        transform: scale(1.15); 
+        transition: transform 0.2s ease;
+    }
+
+    .screen_button:active {
+        transform: scale(1);
+    } 
+  
+    #information { 
+        /* max-block-size: 80%; */
+        
+        
+        align-content: center;
+    }
+
+    #information > div {
+        background-color: lightblue;
+        border: 10px solid teal;
+        align-items: center;
+        align-content: center;
+        margin: 20%, 100%;
+        border-radius: 20px;
+    }
+
+
+    #information > div > ul, #information > div > h2{
+        color: navy;
+        margin: 3%
+    }
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5 ease-in-out;
+    }
+
+    .visible {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    
+    
+ 
