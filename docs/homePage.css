@@ -1,7 +1,7 @@
     
     body {
         background-color:rgb(27, 25, 41);
-        font-family: 'Brush Script MT', cursive;
+        /* font-family: 'Brush Script MT', cursive; */
 
     }
     h1 {
@@ -16,17 +16,22 @@
     #main_content{
         align-items: center;
         text-align: center;
-        font-family: 'Brush Script MT', cursive;
+        /* font-family: 'Brush Script MT', cursive; */
 
     }
 
     #websiteHeader {
-        float: center;
-        max-width: 40%;
-        max-height: .2%;
-        margin-top:5%;
+        display: block; 
+        /* display: flex; */
+        /* transform: scale(1); */
+        /* justify-content: center; */
+        margin: 5% auto;
+        max-width: 20em;
+        max-height: auto;
+        margin-top:1.5%;
+        transition: transform 0.2s ease;
         
-    }
+    } 
 
     #pageButtons {
         display: flex;

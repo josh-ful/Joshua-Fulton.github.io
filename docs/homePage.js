@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img');
+    const abButton = document.querySelector('#abButton');
 
-    const abButton = this.querySelector('#abButton');
-    const information = this.querySelector('#information');
 
-    let visibility = false;
     function noDragging() {
         for(var i = 0; i < images.length; i++) {
-            images[i].setAttribute('draggable', false);
+            images[i].draggable = false;
             images[i].addEventListener('dragstart', function(event) {
                 event.preventDefault();
-            })
+            });
         }
     }
+
+    noDragging();
 
 
 
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         abButton.classList.remove('active');
     });
 
-    noDragging();
 
 
 
